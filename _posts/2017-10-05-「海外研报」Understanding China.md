@@ -5,7 +5,8 @@ subtitle:   China Economic Perspectives
 date:       2017-02-17
 author:     UBS
 header-img: img/post-bg-hacker.jpg
-catalog: true
+catalog: true 
+published:  true   # default true 设置 “false” 后，文章不会显示
 tags:
     - 海外研报
     - Understanding China 

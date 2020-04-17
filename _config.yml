@@ -9,7 +9,36 @@ url: "http://rainjwb.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/rainjwb/rainjwb.github.io.git" # you code repository
 
-# Sidebar settings
+# include: [".htaccess"] 强制处理文件
+# include: ["less","node_modules"]
+
+# exclude: ["less"] 忽略文件
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+# timezone: Europe/Berlin（https://en.wikipedia.org/wiki/List_of_tz_database_time_zones）
+timezone: TIMEZONE
+
+# encoding : utf-8编码
+encoding: ENCODING
+
+# permalink:内置文章链接格式:三种 date，pretty，none
+permalink: pretty
+
+# 通过paginate和paginate_path两个变量来设置每页显示的数量和分页 HTML 的 URL 路径。
+paginate: 10
+
+
+# 设置 YAML Front Matter 变量的默认值。
+defaults:
+  -
+    scope:
+      path: ""      # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      author: "Leon"
+
+
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "I’m an entrepreneur as the founder of Jiade tec Gmbh, whcih is an export and import firm."
 sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
@@ -28,9 +57,11 @@ sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's us
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+
+
+
+# Sidebar settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
@@ -96,6 +127,7 @@ featured-condition-size: 0              # 相同标签数量大于这个数，�
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
+# excerpt_separator: "" #如果Post文章取消自动摘要
 
 # Friends
 #friends: [
