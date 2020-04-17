@@ -1,15 +1,4 @@
-# BY Blog
-
-> 下面是博客的搭建教程，这个教程修改自 [Hux](https://github.com/Huxpro/huxpro.github.io) 。
-> 
-> 更为详细的教程戳这 [《利用 GitHub Pages 快速搭建个人博客》](http://www.jianshu.com/p/e68fba58f75c) 或 [wiki](https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B)
-> 
-### [我的博客在这里 &rarr;](http://qiubaiying.github.io)
-
-![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-home.png)
-
-
-## 使用
+## 介绍
 
 * 开始
 	* [环境](#环境)
@@ -43,19 +32,22 @@
 
 ```
 # Site settings
-title: BY Blog                    # 你的博客网站标题
-SEOTitle: 柏荧的博客 | BY Blog		# SEO 标题
-description: "Hey"	   	   # 随便说点，描述一下
+title: Leon and Lea             # 你的博客网站标题
+SEOTitle: Leon and Lea | Leon		# SEO 标题
+description: "what you want to description"	   # 随便说点，描述一下
 
 # SNS settings      
-github_username: qiubaiying     # 你的github账号
-jianshu_username: e71990ada2fd  # 你的简书ID。
+github_username: rainjwb     # 你的github账号
+jianshu_username: ********  # 如果你有简书ID
 
 # Build settings
-# paginate: 10              # 一页你准备放几篇文章
+# paginate: 10              # 每一页的文章数量
 ```
 
-Jekyll官方网站还有很多的参数可以调，比如设置文章的链接形式...网址在这里：[Jekyll - Official Site](http://jekyllrb.com/) 中文版的在这里：[Jekyll中文](http://jekyllcn.com/).
+Jekyll官方网站还有很多的参数可以调，比如设置文章的链接形式...
+网址：[Jekyll - Official Site](http://jekyllrb.com/) 
+中文网址：[Jekyll中文](http://jekyllcn.com/).
+
 
 ### 撰写博文
 
@@ -66,23 +58,20 @@ yaml 头文件长这样:
 ```
 ---
 layout:     post
-title:      定时器 你真的会使用吗？
-subtitle:   iOS定时器详解
-date:       2016-12-13
-author:     BY
+title:      新冠病毒的起源
+subtitle:   到底是哪里?
+date:       2020-01-23
+author:     Leon
 header-img: img/post-bg-ios9-web.jpg
 catalog: 	 true
 tags:
-    - iOS
-    - 定时器
+    -  新冠病毒
+    -  起源
 ---
 
 ```
 
 ### 侧边栏
-
-看右边:
-![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-side.png)
 
 设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
 
@@ -115,6 +104,7 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
  
 内部有一个条件模板 `{% if tag[1].size > {{site.featured-condition-size}} %}` 是用来做筛选过滤的.
 
+
 ### Social-media Account
 
 在下面输入的社交账号，没有的添加的不会显示在侧边框中。新加入了[简书](https:/www.jianshu.com)链接, <http://www.jianshu.com/u/e71990ada2fd>
@@ -141,12 +131,12 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 # Friends
 friends: [
     {
-        title: "BY Blog",
-        href: "https://qiubaiying.github.io/"
+        title: "xx Blog",
+        href: "https://xx.github.io/"
     },
     {
-        title: "Apple",
-        href: "https://apple.com/"
+        title: "FYE",
+        href: "https://FYE.com/"
     }
 ]
 ```
@@ -182,7 +172,7 @@ iframe在不同的设备中，将会自动的调整大小。保留内边距是�
 
 缺点：评论必须要去注册一个disqus账号，分享一般只有Facebook和Twitter，另外在墙内加载速度略慢了一点。想要知道长啥样，可以看以前的版本点[这里](http://brucezhaor.github.io/about.html) 最下面就可以看到。
 
-> Node：有很多人反映 Disqus 插件加载不出来，可能墙又架高了，有条件的话翻个墙就好了~
+> Node：有很多国内朋友反映 Disqus 插件加载不出来，可能墙又架高了，有条件的话翻个墙就好了~
 
 **使用：**
 
@@ -193,7 +183,7 @@ iframe在不同的设备中，将会自动的调整大小。保留内边距是�
 ```
 # 评论系统
 # Disqus（https://disqus.com/）
-disqus_username: qiubaiying
+disqus_username: rainjwb
 ```
 
 #### Gitalk
@@ -204,8 +194,8 @@ disqus_username: qiubaiying
 
 **使用：**
 
-参考我的这篇文章：[《为博客添加 Gitalk 评论插件》](http://qiubaiying.top/2017/12/19/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0-Gitalk-%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/)
 
+google
 
 ### Analytics
 
@@ -216,8 +206,8 @@ disqus_username: qiubaiying
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # 你用Google账号去注册一个就会给你一个这样的id
-ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto。
+ga_track_id: 'xxxxx'            # 你用Google账号去注册一个就会给你一个这样的id
+ga_domain: auto			# 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto。
 ```
 
 ### Customization
@@ -225,6 +215,7 @@ ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名
 如果你喜欢折腾，你可以去自定义这个模板的 Code。
 
 **如果你可以理解 `_include/` 和 `_layouts/`文件夹下的代码（这里是整个界面布局的地方），你就可以使用 Jekyll 使用的模版引擎 [Liquid](https://github.com/Shopify/liquid/wiki)的语法直接修改/添加代码，来进行更有创意的自定义界面啦！**
+
 
 ### Header Image
 
@@ -238,11 +229,12 @@ ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名
 
 ### SEO Title
 
-我的博客标题是 **“BY Blog”** 但是我想要在搜索的时候显示 **“柏荧的博客 | BY Blog”** ，这个就需要 SEO Title 来定义了。
+我的博客标题是 **“Leon und Lea”** 但是我想要在搜索的时候显示 **Leon & Lea”** ，这个就需要 SEO Title 来定义了。
 
 其实这个 SEO Title 就是定义了<head><title>标题</title></head>这个里面的东西和多说分享的标题，你可以自行修改的。
 
 ### 关于收到"Page Build Warning"的 Email
+
 
 由于jekyll升级到3.0.x,对原来的 pygments 代码高亮不再支持，现只支持一种-rouge，所以你需要在 `_config.yml`文件中修改`highlighter: rouge`.另外还需要在`_config.yml`文件中加上`gems: [jekyll-paginate]`.
 
@@ -263,10 +255,10 @@ ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名
 
 ## 致谢
 
-1. 这个模板是从这里 [Hux](https://github.com/Huxpro/huxpro.github.io) fork 的, 感谢这个作者。 
+1. 这个模板是从这里 BY and Hux中fork的, 感谢这两位作者。 
 2. 感谢 Jekyll、Github Pages 和 Bootstrap!
 
 ## License
 
-遵循 MIT 许可证。有关详细,请参阅 [LICENSE](https://github.com/qiubaiying/qiubaiying.github.io/blob/master/LICENSE)。
+遵循 MIT 许可证。
 
