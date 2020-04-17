@@ -29,14 +29,14 @@ paginate: 10
 
 
 # 设置 YAML Front Matter 变量的默认值。
-defaults:
-  -
-    scope:
-      path: ""      # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
-    values:
-      layout: "post"
-      author: "Leon"
+# defaults:
+#  -
+#    scope:
+#      path: ""      # an empty string here means all files in the project
+#      type: "posts" # previously `post` in Jekyll 2.2.
+#    values:
+#      layout: "post"
+#      author: "Leon"
 
 
 sidebar: true                           # whether or not using Sidebar.
@@ -66,7 +66,7 @@ anchorjs: true                          # if you want to customize anchor. check
 
 
 # Gems
-# from PR#40, to support local preview for Jekyll 3.0
+# from PR#40, to support local preview for Jekyll 4.0
 gems: [jekyll-paginate]
 gems: [jekyll-feed]
 gems: [jekyll-seo-tag]
@@ -84,6 +84,7 @@ plugins:
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
+
 markdown: kramdown
 highlighter: rouge
 kramdown:
